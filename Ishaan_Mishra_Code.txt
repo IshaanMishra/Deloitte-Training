@@ -1,0 +1,29 @@
+Ishaan Mishra
+
+import java.util.Scanner;
+
+class Vowel{
+
+public static void main(String args[]){
+
+Scanner sc=new Scanner(System.in);
+String input=sc.nextLine();
+
+int count=0;
+
+StringBuffer sb=new StringBuffer(input);
+input=sb.reverse().toString();
+
+System.out.println("Reversed String is: "+input);
+
+input=input.toLowerCase();
+
+for(int i=0;i<input.length();i++)
+	if(input.charAt(i)=='a' || input.charAt(i)=='e' || input.charAt(i)=='i' || input.charAt(i)=='o' || input.charAt(i)=='u')
+		count++;
+
+
+System.out.println("Number Of Vowels in the string are: "+count);
+
+	}
+}
